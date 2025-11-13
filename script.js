@@ -27,6 +27,7 @@ let timer = `00-00`;
 highScoreElement.innerHTML = highScore;
 scoreElement.innerHTML = score;
 timerElement.innerHTML = timer;
+
 const blocks = [];
 let snake = [
   {
@@ -51,9 +52,9 @@ for (let row = 0; row < rows; row++) {
   }
 }
 
+//   Random food Generation
 function render() {
   let head = null;
-  //   Random food Generation
   blocks[`${food.x}-${food.y}`].classList.add("food");
 
   //   Changing the snake moving direction
